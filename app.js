@@ -26,6 +26,7 @@ async function searchVideo(searchQuery) {
     part: "snippet",
     q: searchQuery,
     key: youtubeApiKey,
+    videoEmbeddable: "true",
   });
 
   return results;
