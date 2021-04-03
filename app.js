@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const { google } = require("googleapis");
 const compression = require("compression");
-const cors = require("cors");
+// const cors = require("cors");
 const path = require("path");
 
 const app = express();
@@ -10,7 +10,7 @@ const port = process.env.PORT;
 const maxResults = process.env.MAX_RESULTS;
 
 app.use(compression());
-app.use(cors());
+// app.use(cors());
 
 const youtubeApiKey = process.env.YOUTUBE_API_KEY;
 const youtube = google.youtube("v3");
